@@ -16,5 +16,15 @@
       "@typescript-eslint"
   ],
   "rules": {
-  }
+    "camelcase": 0,
+    "class-methods-use-this": 0,
+    "import/prefer-default-export": 0
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  },
 }

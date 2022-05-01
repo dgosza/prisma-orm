@@ -1,0 +1,29 @@
+###
+# @name CreateProduct_
+POST http://localhost:3333/product
+content-type: application/json
+
+{
+  "name": "Teclado RGB",
+  "bar_code": "4655759879",
+  "price": 320
+}
+
+###
+# @name CreateCategory
+POST http://localhost:3333/category
+content-type: application/json
+
+{
+  "name": "Informática e derivados"
+}
+
+###
+# @name CreateProductCategory
+POST http://localhost:3333/productCategory
+content-type: application/json
+
+{
+  "id_category": "cf0f0b62-754a-4dd0-bd3e-630b797e85b2",
+  "id_product": "65d32255-84ea-4c78-a659-1f084c210b1e"
+}
